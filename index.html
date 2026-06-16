@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Welcome Screen -->
+    <div class="welcome-screen" id="welcomeScreen">
+        <h1>TIC TAC TOE</h1>
+        <p>Neon Battle Arena</p>
+
+        <input type="text" id="player1" placeholder="Player 1 Name">
+        <input type="text" id="player2" placeholder="Player 2 Name">
+
+        <button onclick="startGame()">Start Play</button>
+    </div>
+
+    <!-- Game Screen -->
+    <div class="game-screen" id="gameScreen">
+
+        <h2 id="players"></h2>
+
+        <div class="turn" id="turnText"></div>
+
+        <div class="board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <button class="restart" onclick="restartGame()">
+            Restart Game
+        </button>
+
+    </div>
+
+    <!-- Winner Popup -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2 id="winnerText"></h2>
+            <button onclick="playAgain()">Play Again</button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
